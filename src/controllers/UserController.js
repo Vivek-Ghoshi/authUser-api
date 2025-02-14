@@ -47,7 +47,7 @@ module.exports.loginController = async (req,res)=>{
     }
 }
 
-module.exports.searchController = async(req,res)=>{
+module.exports.UserDetails = async(req,res)=>{
      try {
         let {email} = req.user;
         let user = await userModel.findOne({email});
